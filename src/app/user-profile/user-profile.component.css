@@ -1,0 +1,24 @@
+.userProfileMainDiv {
+    height: 400px;
+}
+
+.userAvatar {
+    height: 400px;
+    width: 300px;
+    padding: unset;
+    float: left;
+}
+
+.userAvatarImg {
+    height: 400px;
+    width: 300px;
+}
+
+.userMainInfo {
+    margin-left: 10px;
+    float: left;
+}
+.userNickName{
+    font-size: 26px;
+    border-bottom: 1px solid var(--border-color);
+}
