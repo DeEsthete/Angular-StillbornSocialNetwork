@@ -2,8 +2,9 @@ import { MyComment } from './MyComment';
 import { Media } from './Media';
 
 export class Post{
-    public Text: string;
-    public Medias: Media[];
-    public Likes: number;
-    public Comments: MyComment[];
+    public id: number;
+    public text: string;
+    public medias: Media[];
+    public likes: number;
+    public comments: MyComment[];
 }

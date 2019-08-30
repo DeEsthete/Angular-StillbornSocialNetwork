@@ -2,8 +2,8 @@
   "name": "stillborn",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
+    "ng": "node C:\\Users\\ПавловЕ\\AppData\\Roaming\\npm\\node_modules\\@angular\\cli\\bin\\ng",
+    "start": "node C:\\Users\\ПавловЕ\\AppData\\Roaming\\npm\\node_modules\\@angular\\cli\\bin\\ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

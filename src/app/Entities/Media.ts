@@ -2,8 +2,9 @@ import { MediaType } from './MediaType';
 import { MyComment } from './MyComment';
 
 export class Media{
-    public Bytes;
-    public Type: MediaType;
-    public Likes: number;
-    public Comments: MyComment[];
+    public id: number;
+    public bytes;
+    public type: MediaType;
+    public kikes: number;
+    public comments: MyComment[];
 }

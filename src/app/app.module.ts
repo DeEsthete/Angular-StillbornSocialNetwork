@@ -3,20 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { SideBarComponent } from './side-bar/side-bar.component';
+import { UserProfileComponent } from './Components/user-profile/user-profile.component';
+import { SideBarComponent } from './Components/side-bar/side-bar.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
-    SideBarComponent,
-    HttpClientModule
+    SideBarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

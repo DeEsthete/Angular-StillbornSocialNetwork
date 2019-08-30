@@ -2,8 +2,9 @@ import { User } from './User';
 import { Media } from './Media';
 
 export class MyComment {
-    public Sender: User;
-    public Text: string;
-    public Medias: Media[];
-    public Likes: number;
+    public id: number;
+    public sender: User;
+    public text: string;
+    public medias: Media[];
+    public likes: number;
 }

@@ -2,9 +2,10 @@ import { Post } from './Post';
 import { Media } from './Media';
 
 export class User{
-    public NickName: string;
-    public IsMan: boolean;
-    public Medias: Media[];
-    public PhotoCount: number;
-    public Posts: Post[];
+    public id: number;
+    public nickName: string;
+    public isMan: boolean;
+    public medias: Media[];
+    public photoCount: number;
+    public posts: Post[];
 }
