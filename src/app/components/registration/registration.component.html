@@ -1,0 +1,13 @@
+<div class="registrationDiv col-md-4 container">
+    <span class="title">Регистрация</span><br>
+    <input class="form-control" [(ngModel)]="user.login" type="text" placeholder="Логин"><br />
+    <input class="form-control" [(ngModel)]="user.password" type="text" placeholder="Пароль"><br /><br />
+    <input class="form-control" [(ngModel)]="user.email" type="text" placeholder="Почта"><br />
+    <input class="form-control" [(ngModel)]="user.nickName" type="text" placeholder="Ник"><br />
+    <span>Пол</span>
+    <input class="form-control" type="radio" id="isMan1" name="isMan" value="Мужской">
+    <input class="form-control" type="radio" id="isMan2" name="isMan" value="Женский"><br />
+
+    <div class="button authorizationButton" (click)="signUp()">Зарегистрироваться</div><br>
+    <div class="button authorizationButton" (click)="signIn ()">Войти</div>
+</div>

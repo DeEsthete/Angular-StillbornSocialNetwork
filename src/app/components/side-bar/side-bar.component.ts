@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-bar',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  public goToProfile(): void{
+    this.router.navigate(['/user-profile/' + localStorage.getItem("userId")]);
+  }
+  public goToChatRooms(): void {
+    this.router.navigate(['/chat-rooms/' + localStorage.getItem("userId")]);
+  }
+  public goToFriends(): void {
+    this.router.navigate(['/friends/' + localStorage.getItem("userId")]);
+  }
+  public goToGroups(): void {
+    this.router.navigate(['/groups/' + localStorage.getItem("userId")]);
+  }
+  public goToPhoto(): void {
+    this.router.navigate(['/photos/' + localStorage.getItem("userId")]);
+  }
 }

@@ -1,0 +1,26 @@
+.authorizationDiv{
+    text-align: center;
+    margin-top: 50px;
+    align-items: center;
+    top: 50%;
+}
+.title{
+    font-size: 32px;
+    margin-bottom: 100px;
+}
+input{
+    display: unset;
+    text-align: center;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.authorizationButton{
+    display: inline-block;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.forgotPassword{
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.registrationDiv{
+    text-align: center;
+}
+.title{
+    font-size: 32px;
+    margin-bottom: 100px;
+}
+input{
+    display: unset;
+    text-align: center;
+    width: 300px;
+    margin-top: 10px;
+}

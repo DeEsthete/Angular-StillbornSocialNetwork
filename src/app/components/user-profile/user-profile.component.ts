@@ -19,13 +19,18 @@ export class UserProfileComponent implements OnInit {
     private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    //localStorage.setItem()
     this.route.params.subscribe(params => {
-      const id = +params['id'];
+      const id = params['id'];
       if (id) {
         this.userService.getUser(id)
-        .subscribe(result => this.selectedUser = result);
+        .subscribe(result => this.userAccept(result));
       }
     });
+  }
+
+  private userAccept(result: any): void
+  {
+    this.selectedUser = result;
+    if (this.selectedUser.id == localStorage.getItem("userId")) this.isMayEdit = true;
   }
 }

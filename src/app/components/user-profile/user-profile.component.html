@@ -2,13 +2,17 @@
     <div class="userAvatar col-md-4">
         <img src="../assets/Img/SideBarMenu/user.svg" alt="Profile" class="userAvatarImg" />
     </div>
-    <div class="userMainInfo col-md-6">
-        <span class="userNickName">NickName</span><br />
-        <span>Пол: </span><span id="IsMan">Не указан</span>
-        <div class="mediaButtons">
-            <div class="mediaButton">
-                <span id="imageCount"></span><br />
+    <div class="userMainInfo col-md-8">
+        <span class="userNickName">{{ selectedUser.nickName }}</span><br />
+        <span>Пол: </span><span id="IsMan">{{ selectedUser.isMan }}</span>
+        <div class="mediaButtons d-flex flex-row justify-content-between">
+            <div class="mediaButton col-md-6" (click)="goToPhoto()">
+                <span class="mediaCount">{{ selectedUser.photoCount }}</span><br>
                 <span>фотографии</span>
+            </div>
+            <div class="mediaButton col-md-6" (click)="goToFriends()">
+                <span class="mediaCount">{{ selectedUser.friendsCount }}</span><br>
+                <span>друзья</span>
             </div>
         </div>
     </div>
