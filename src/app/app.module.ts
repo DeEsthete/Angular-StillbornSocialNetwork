@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthorizationComponent } from './components/authorization/authorization.component';
 import { UsersService } from './Services/users.service';
 import { RegistrationComponent } from './components/registration/registration.component';
+import { UserProfilePostsComponent } from './components/user-profile-posts/user-profile-posts.component';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { RegistrationComponent } from './components/registration/registration.co
     UserProfileComponent,
     SideBarComponent,
     AuthorizationComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    UserProfilePostsComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

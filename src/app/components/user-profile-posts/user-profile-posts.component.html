@@ -1,0 +1,13 @@
+<div class="userPosts">
+    <div *ngIf="isMayEdit" class="writePost">
+        <span class="writePostTitle">Создайте свой новый пост здесь</span>
+        <input class="writePostText" type="text" placeholder="Hello world">
+        <span>Простите а как добавить Media ?</span>
+        <span class="sendPostButton" (click)="createPost()">Опубликовать</span>
+    </div>
+    <div class="readPosts">
+        <div *ngFor="let post of selectedUser.posts">
+            <app-post [post]="post"></app-post>
+        </div>
+    </div>
+</div>

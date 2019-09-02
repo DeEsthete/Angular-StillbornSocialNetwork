@@ -11,24 +11,36 @@ import { UserAuthorizeViewModel } from 'src/app/Entities/UserAuthorizeViewModel'
 })
 export class AuthorizationComponent implements OnInit {
 
-  public user: UserAuthorizeViewModel = { id: null, login: null, password: null};
+  public user: UserAuthorizeViewModel = { id: null, login: null, password: null };
   public login: string;
   public password: string;
 
-  constructor(private router: Router, private usersService: UsersService) {}
+  constructor(private router: Router, private usersService: UsersService) { }
 
   ngOnInit() {
   }
 
   public signIn() {
-    this.usersService.signIn(this.user);
+    this.usersService.signIn(this.user).subscribe(result => this.goToProfile(result));
   }
 
-  public forgotPassword(){
+  public goToProfile(result: string) {
+    if (result)
+    {
+      localStorage.setItem("userId", "result");
+      this.router.navigate(['/user-profile/' + result]);
+    }
+    else
+    {
+      //ToDo если юзер не вошел
+    }
+  }
+
+  public forgotPassword() {
     this.router.navigate(['/forgot-password']);
   }
 
-  public signUp(){
+  public signUp() {
     this.router.navigate(['/registration']);
   }
 }
