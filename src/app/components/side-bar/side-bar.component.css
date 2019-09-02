@@ -30,3 +30,7 @@
     height: 30px;
     margin-right: 6px;
 }
+a {
+    color: var(--font-color);
+    text-decoration: none
+  }

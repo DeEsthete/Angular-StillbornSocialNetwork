@@ -8,6 +8,10 @@ import { Router } from '@angular/router';
 })
 export class SideBarComponent implements OnInit {
 
+  get userId(): string{
+    return localStorage.getItem("userId");
+  }
+
   constructor(private router: Router) { }
 
   ngOnInit() {

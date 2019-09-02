@@ -11,7 +11,7 @@ import { UserAuthorizeViewModel } from 'src/app/Entities/UserAuthorizeViewModel'
 })
 export class AuthorizationComponent implements OnInit {
 
-  public user: UserAuthorizeViewModel = { id: null, login: null, password: null };
+  public user: UserAuthorizeViewModel = { login: null, password: null };
   public login: string;
   public password: string;
 

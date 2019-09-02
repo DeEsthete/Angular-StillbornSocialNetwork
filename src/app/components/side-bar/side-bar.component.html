@@ -1,15 +1,30 @@
 <div>
     <ul class="menu">
         <li class="menuLi logoLi">Stillborn</li>
-        <li class="menuLi"><img src="../assets/Img/SideBarMenu/home.svg" alt="Profile" class="sideBarIcon" (click)="goToProfile()"/>
-            Профиль</li>
-        <li class="menuLi"><img src="../assets/Img/SideBarMenu/chat.svg" alt="Profile" class="sideBarIcon" (click)="goToChatRooms()" />
-            Сообщения</li>
-        <li class="menuLi"><img src="../assets/Img/SideBarMenu/user.svg" alt="Profile" class="sideBarIcon" (click)="goToFriends()"/>
-            Друзья</li>
-        <li class="menuLi"><img src="../assets/Img/SideBarMenu/users.svg" alt="Profile" class="sideBarIcon" (click)="goToGroups()"/>
-            Сообщества</li>
-        <li class="menuLi"><img src="../assets/Img/SideBarMenu/picture.svg" alt="Profile" class="sideBarIcon" (click)="goToPhoto"/>
-            Фотографии</li>
+        <li class="menuLi">
+            <a routerLink="/user-profile/{{userId}}">
+                <img src="../assets/Img/SideBarMenu/home.svg" alt="Profile" class="sideBarIcon"/>
+                Профиль
+            </a></li>
+        <li class="menuLi">
+            <a routerLink="/chat-rooms/{{userId}}">
+                <img src="../assets/Img/SideBarMenu/chat.svg" alt="Chat" class="sideBarIcon" />
+                Сообщения
+            </a></li>
+        <li class="menuLi">
+            <a routerLink="/friends/{{userId}}">
+                <img src="../assets/Img/SideBarMenu/user.svg" alt="Profile" class="sideBarIcon"/>
+                Друзья
+            </a></li>
+        <li class="menuLi">
+            <a routerLink="/groups/{{userId}}">
+                <img src="../assets/Img/SideBarMenu/users.svg" alt="Profile" class="sideBarIcon"/>
+                Сообщества
+            </a></li>
+        <li class="menuLi">
+            <a routerLink="/photos/{{userId}}">
+                <img src="../assets/Img/SideBarMenu/picture.svg" alt="Profile" class="sideBarIcon" (click)="goToPhoto"/>
+                Фотографии
+            </a></li>
     </ul>
 </div>

@@ -7,7 +7,6 @@ import { RegistrationComponent } from './components/registration/registration.co
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'UserProfile', pathMatch: 'full' },
   { path: 'user-profile/:id', component: UserProfileComponent },
   { path: 'authorization', component: AuthorizationComponent},
   { path: 'registration', component: RegistrationComponent}
