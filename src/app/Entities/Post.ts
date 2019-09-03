@@ -5,7 +5,7 @@ export class Post{
     public id: number;
     public senderId: string;
     public text: string;
-    public medias: Media[];
+    public contentId: number;
     public likes: number;
     public comments: MyComment[];
 }

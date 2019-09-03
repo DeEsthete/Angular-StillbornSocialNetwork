@@ -35,8 +35,6 @@ body {
 }
 
 .button{
-    background: var(--second-background-color);
-    border-radius: 10px;
     padding: 4px;
     font-size: 20px;
     transition: 0.3s;
@@ -44,10 +42,8 @@ body {
 }
 
 .button:hover{    
-    background: var(--background-color);
+    background: var(--second-background-color);
     color: var(--font-color);
     transition: 0.3s;
-    border-radius: 0%;
-    border: 1px solid var(--second-background-color);
-    padding: 3px;
+    border-radius: 10px;
 }

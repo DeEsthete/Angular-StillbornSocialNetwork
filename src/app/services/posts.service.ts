@@ -12,7 +12,7 @@ export class PostsService {
   }
 
   public initializePost(senderId: string): Post {
-    return { id=null, senderId = senderId, }
+    return <Post>{ id: null, senderId: senderId, text:"", contentId: null, likes: 0, comments: null};
    }
 
   public getWallPosts(wallId: number): Observable<Post[]> {
