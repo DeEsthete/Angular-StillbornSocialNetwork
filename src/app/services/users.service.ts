@@ -11,7 +11,7 @@ export class UsersService {
   constructor(private http: HttpClient) {
   }
   public initializeUser(): User{
-    return <User>{ id: null, login: null, password: null, nickName: null, isMan: true, email: null, medias: null, photoCount: null, friendsCount: null, posts: null };
+    return <User>{ id: null, login: null, password: null, nickName: null, isMan: true, email: null, wallId: null, medias: null, photoCount: null, friendsCount: null};
   }
   public getUser(id: string): Observable<User> {
     return this.http.get<User>('/api/user/' + id);

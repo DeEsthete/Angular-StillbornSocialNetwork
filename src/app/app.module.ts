@@ -12,6 +12,7 @@ import { UsersService } from './Services/users.service';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { UserProfilePostsComponent } from './components/user-profile-posts/user-profile-posts.component';
 import { PostComponent } from './components/post/post.component';
+import { PostsService } from './services/posts.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PostComponent } from './components/post/post.component';
     HttpClientModule
   ],
   providers: [
-    UsersService
+    UsersService,
+    PostsService
   ],
   bootstrap: [AppComponent]
 })

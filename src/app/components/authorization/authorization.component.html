@@ -1,7 +1,7 @@
 <div class="authorizationDiv col-md-4 container">
     <span class="title">Авторизация</span><br>
     <input class="form-control" [(ngModel)]="user.login" type="text" placeholder="Логин"><br />
-    <input class="form-control" [(ngModel)]="user.password" type="text" placeholder="Пароль"><br /><br />
+    <input class="form-control" [(ngModel)]="user.password" type="password"><br /><br />
     <div class="button authorizationButton" (click)="signIn()">Войти</div><br>
     <div class="forgotPassword" (click)="forgotPassword()">Забыл пароль</div><br><br>
 
