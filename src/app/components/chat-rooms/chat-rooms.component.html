@@ -1,13 +1,13 @@
 <div class="chatRooms">
-  <div class="chatRoom">
+  <a [routerLink]="['/user/bob']" class="chatRoom">
     <span class="chatRoomName">CreatorName, Name, Name, Name, Name</span><br>
     <span class="lastMessage">LastMessageSender: LastMessageTeeeeeeeeeeeeeeeeeeeext</span>
-  </div>
+  </a>
   <div *ngFor="let chatRoom of chatRooms">
-    <div class="chatRoom">
-      <span>{{ creatorName }}</span>
-      <span *ngFor="let userName of userNames">userName.name</span>
-      <span class="lastMessage">{{ lastMessage.sender }}</span>
-    </div>
+    <a [routerLink]="['/chat-room/' + chatRoom.id]" class="chatRoom">
+      <span class="creatorName">{{ creatorName }} </span>
+      <span *ngFor="let userName of userNames">userName.name</span><br>
+      <span class="lastMessage">{{ lastMessage.sender }} {{ lastMessage.text }}</span>
+    </a>
   </div>
 </div>

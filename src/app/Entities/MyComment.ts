@@ -1,10 +1,8 @@
-import { User } from './User';
-import { Media } from './Media';
-
 export class MyComment {
-    public id: number;
-    public sender: User;
-    public text: string;
-    public medias: Media[];
-    public likes: number;
+  public id: number;
+  public postId: number;
+  public mediaId: number;
+  public text: string;
+  public contentId: number;
+  public senderId: string;
 }

@@ -48,3 +48,12 @@ body {
     transition: 0.3s;
     border-radius: 10px;
 }
+
+a{
+    color: var(--main-font-color);
+    display: block;
+}
+a:hover{
+    color: var(--main-font-color);
+    text-decoration: none;
+}

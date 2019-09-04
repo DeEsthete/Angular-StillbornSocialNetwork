@@ -1,5 +1,6 @@
 .chatRoom{
-  border: 2px solid white;
+  border: 1px solid white;
+  padding: 10px;
   border-radius: 10px;
   margin-top: 10px;
 }
