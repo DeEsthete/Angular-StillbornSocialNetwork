@@ -1,0 +1,15 @@
+.postDiv{
+  border: 1px solid var(--second-background-color);
+  border-radius: 10px;
+  width: 600px;
+  height: auto;
+  margin-top: 20px;
+}
+.postText{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: var(--second-background-color);
+  border: none;
+  color: var(--font-color);
+  height: auto;
+}

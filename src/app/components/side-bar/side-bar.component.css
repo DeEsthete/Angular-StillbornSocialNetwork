@@ -4,7 +4,9 @@
 }
 
 .logoLi {
-    font-size: 26px;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px;
     font-family: 'Permanent Marker', cursive;
     color: var(--logo-font-color);
     border-bottom: 1px solid var(--border-color);

@@ -13,6 +13,7 @@ import { RegistrationComponent } from './components/registration/registration.co
 import { UserProfilePostsComponent } from './components/user-profile-posts/user-profile-posts.component';
 import { PostComponent } from './components/post/post.component';
 import { PostsService } from './services/posts.service';
+import { ChatRoomsComponent } from './components/chat-rooms/chat-rooms.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PostsService } from './services/posts.service';
     AuthorizationComponent,
     RegistrationComponent,
     UserProfilePostsComponent,
-    PostComponent
+    PostComponent,
+    ChatRoomsComponent
   ],
   imports: [
     BrowserModule,

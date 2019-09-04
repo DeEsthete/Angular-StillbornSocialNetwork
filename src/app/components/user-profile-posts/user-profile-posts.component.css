@@ -2,11 +2,15 @@
   margin-top: 10px;
 }
 .writePostTitle{
+  display: block;
   border-bottom: 1px solid var(--second-background-color);
+  margin-bottom: 0px;
 }
 .writePost{
   border: 1px solid var(--second-background-color);
   width: 600px;
+  height: 255px;
+  border-radius: 10px;
 }
 .writePostText{
   background: var(--second-background-color);
@@ -15,6 +19,23 @@
   height: 150px;
   resize: none;
 }
-.sendPostButton{
+.addMediaButton{
+  display: block;
+  width: 190px;
+  text-align: center;
   margin-bottom: 20px;
+  float: left;
+}
+.sendPostButton{
+  display: block;
+  width: 150px;
+  text-align: center;
+  margin-bottom: 20px;
+  float: right;
+}
+.errorMessage{
+  color: red;
+}
+.readPosts{
+  margin-top: 20px;
 }

@@ -1,0 +1,13 @@
+<div class="chatRooms">
+  <div class="chatRoom">
+    <span class="chatRoomName">CreatorName, Name, Name, Name, Name</span><br>
+    <span class="lastMessage">LastMessageSender: LastMessageTeeeeeeeeeeeeeeeeeeeext</span>
+  </div>
+  <div *ngFor="let chatRoom of chatRooms">
+    <div class="chatRoom">
+      <span>{{ creatorName }}</span>
+      <span *ngFor="let userName of userNames">userName.name</span>
+      <span class="lastMessage">{{ lastMessage.sender }}</span>
+    </div>
+  </div>
+</div>

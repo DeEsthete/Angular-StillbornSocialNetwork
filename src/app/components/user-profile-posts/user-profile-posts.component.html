@@ -1,11 +1,16 @@
 <div class="userPosts">
     <div  class="writePost container"> <!--*ngIf="isMayEdit"-->
-        <span class="writePostTitle">Создайте свой новый пост здесь</span><br>
+        <span class="writePostTitle">Создайте свой новый пост здесь. </span>
+        <span class="errorMessage" *ngIf="isError">Похоже что вы сделали что-то не так =(</span><br>
         <textarea class="form-control writePostText" [(ngModel)]="post.text" maxlength="3000"></textarea>
-        <span>Простите, а как добавить Media ?</span><br>
+        <span class="addMediaButton button">Добавить файл</span>
         <span class="sendPostButton button" (click)="createPost()">Опубликовать</span>
     </div>
-    <div class="readPosts">
+    <div class="userContact"></div>
+    <div class="readPosts container">
+        <app-post [post]="post"></app-post>
+        <app-post [post]="post"></app-post>
+        <app-post [post]="post"></app-post>
         <div *ngFor="let post of posts">
             <app-post [post]="post"></app-post>
         </div>

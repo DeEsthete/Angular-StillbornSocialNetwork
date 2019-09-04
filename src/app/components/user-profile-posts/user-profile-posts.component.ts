@@ -13,17 +13,18 @@ export class UserProfilePostsComponent implements OnInit {
   @Input() selectedUser: User;
   @Input() isMayEdit: boolean;
   public posts: Post[];
-  public post: string;
+  public post: Post;
+  public isError: boolean = true;
 
   constructor(private postsService: PostsService) { }//PostService есть, а если найду ???
 
   ngOnInit() {
+    this.post = this.postsService.initializePost(this.selectedUser.id);
     this.postsService.getWallPosts(this.selectedUser.wallId).subscribe(result => this.posts = result);
   }
 
   public createPost()
   {
-
+    this.postsService.createPost(this.post, this.selectedUser.wallId);
   }
-
 }
