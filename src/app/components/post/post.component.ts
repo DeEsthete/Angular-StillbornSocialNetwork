@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Post } from 'src/app/Entities/Post';
-import { User } from 'src/app/Entities/User';
+import { Post } from 'src/app/Entities/Dto(Main)/Post';
+import { User } from 'src/app/Entities/Dto(Main)/User';
 import { UsersService } from 'src/app/Services/users.service';
 import { ActivatedRoute } from '@angular/router';
 

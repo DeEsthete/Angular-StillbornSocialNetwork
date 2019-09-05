@@ -9,7 +9,15 @@ import { Router } from '@angular/router';
 export class SideBarComponent implements OnInit {
 
   get userId(): string{
-    return localStorage.getItem("userId");
+    let answer = localStorage.getItem("userId");
+    if (answer)
+    {
+      return answer;
+    }
+    else
+    {
+      return "null";
+    }
   }
 
   constructor(private router: Router) { }

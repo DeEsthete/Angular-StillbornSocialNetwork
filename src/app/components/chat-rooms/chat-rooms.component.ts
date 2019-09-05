@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChatRoomForChatRooms } from 'src/app/Entities/ViewModels/ChatRoomForChatRooms';
 
 @Component({
   selector: 'app-chat-rooms',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat-rooms.component.css']
 })
 export class ChatRoomsComponent implements OnInit {
+
+  public chatRooms: ChatRoomForChatRooms[];
 
   constructor() { }
 

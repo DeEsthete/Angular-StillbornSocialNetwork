@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { User } from 'src/app/Entities/User';
-import { Post } from 'src/app/Entities/Post';
+import { User } from 'src/app/Entities/Dto(Main)/User';
+import { Post } from 'src/app/Entities/Dto(Main)/Post';
 import { PostsService } from 'src/app/services/posts.service';
 
 @Component({

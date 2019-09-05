@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { User } from "../Entities/User"
-import { UserAuthorizeViewModel } from '../Entities/UserAuthorizeViewModel';
+import { User } from "../Entities/Dto(Main)/User"
+import { UserAuthorizeViewModel } from '../Entities/ViewModels/UserAuthorizeViewModel';
 
 @Injectable({
   providedIn: 'root'

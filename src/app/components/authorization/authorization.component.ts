@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from 'src/app/Entities/User';
+import { User } from 'src/app/Entities/Dto(Main)/User';
 import { Router } from '@angular/router';
 import { UsersService } from 'src/app/Services/users.service';
-import { UserAuthorizeViewModel } from 'src/app/Entities/UserAuthorizeViewModel';
+import { UserAuthorizeViewModel } from 'src/app/Entities/ViewModels/UserAuthorizeViewModel';
 
 @Component({
   selector: 'app-authorization',

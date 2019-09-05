@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User } from '../../Entities/User';
+import { User } from '../../Entities/Dto(Main)/User';
 import { ActivatedRoute } from '@angular/router';
 import { UsersService } from 'src/app/Services/users.service';
 
