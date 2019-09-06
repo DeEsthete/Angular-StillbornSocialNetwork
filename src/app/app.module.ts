@@ -14,6 +14,7 @@ import { UserProfilePostsComponent } from './components/user-profile-posts/user-
 import { PostComponent } from './components/post/post.component';
 import { PostsService } from './services/posts.service';
 import { ChatRoomsComponent } from './components/chat-rooms/chat-rooms.component';
+import { ChatRoomComponent } from './components/chat-room/chat-room.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ChatRoomsComponent } from './components/chat-rooms/chat-rooms.component
     RegistrationComponent,
     UserProfilePostsComponent,
     PostComponent,
-    ChatRoomsComponent
+    ChatRoomsComponent,
+    ChatRoomComponent
   ],
   imports: [
     BrowserModule,

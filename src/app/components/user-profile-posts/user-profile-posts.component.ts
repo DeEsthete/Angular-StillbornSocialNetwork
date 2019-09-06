@@ -14,9 +14,9 @@ export class UserProfilePostsComponent implements OnInit {
   @Input() isMayEdit: boolean;
   public posts: Post[];
   public post: Post;
-  public isError: boolean = true;
+  public isError: boolean = true; //есть проблемы
 
-  constructor(private postsService: PostsService) { }//PostService есть, а если найду ???
+  constructor(private postsService: PostsService) { }
 
   ngOnInit() {
     this.post = this.postsService.initializePost(this.selectedUser.id);

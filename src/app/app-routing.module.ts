@@ -5,13 +5,15 @@ import { UserProfileComponent } from './Components/user-profile/user-profile.com
 import { AuthorizationComponent } from './components/authorization/authorization.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { ChatRoomsComponent } from './components/chat-rooms/chat-rooms.component';
+import { ChatRoomComponent } from './components/chat-room/chat-room.component';
 
 
 const routes: Routes = [
   { path: 'authorization', component: AuthorizationComponent },
   { path: 'registration', component: RegistrationComponent },
   { path: 'user-profile/:id', component: UserProfileComponent },
-  { path: 'chat-rooms/:id', component: ChatRoomsComponent}
+  { path: 'chat-rooms/:id', component: ChatRoomsComponent},
+  { path: 'chat-room/:id', component: ChatRoomComponent}
 ]
 
 @NgModule({

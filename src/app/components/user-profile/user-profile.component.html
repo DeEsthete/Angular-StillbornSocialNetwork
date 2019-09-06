@@ -5,15 +5,19 @@
     <div class="inl userMainInfo col-md-8">
         <span class="userNickName">{{ selectedUser.nickName }}</span><br />
         <span>Пол: </span><span id="IsMan">{{ selectedUser.isMan }}</span>
-        <div class="mediaButtons d-flex flex-row justify-content-between">
-            <div class="mediaButton col-md-6" (click)="goToPhoto()">
+        <div class="mediaButtons ">
+            <a routerLink="/photos/{{userId}}" class="mediaButton col-md-4">
                 <span class="mediaCount">{{ selectedUser.photoCount }}</span><br>
                 <span>фотографии</span>
-            </div>
-            <div class="mediaButton col-md-6" (click)="goToFriends()">
+            </a>
+            <a routerLink="/friends/{{userId}}" class="mediaButton col-md-4">
                 <span class="mediaCount">{{ selectedUser.friendsCount }}</span><br>
                 <span>друзья</span>
-            </div>
+            </a>
+            <a routerLink="/followers/{{userId}}" class="mediaButton col-md-4" (click)="goToFollowers()">
+                <span class="mediaCount">{{ selectedUser.followerCount }}</span><br>
+                <span>подписчики</span>
+            </a>
         </div>
     </div>
 </div>

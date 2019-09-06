@@ -14,6 +14,16 @@ export class UserProfileComponent implements OnInit {
   public selectedUser: User;
   public isMayEdit: boolean;
 
+  get userId(): string {
+    let answer = localStorage.getItem("userId");
+    if (answer) {
+      return answer;
+    }
+    else {
+      return "null";
+    }
+  }
+
   constructor(
     private userService: UsersService,
     private route: ActivatedRoute) {}

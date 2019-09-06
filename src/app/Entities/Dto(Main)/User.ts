@@ -5,6 +5,7 @@ export class User{
     public email: string;
     public nickName: string;
     public isMan: boolean;
+    public contentId: number;
     public wallId: number;
     public photoCount: number;
     public friendsCount: number;

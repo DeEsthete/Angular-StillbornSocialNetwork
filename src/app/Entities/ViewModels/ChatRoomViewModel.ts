@@ -1,4 +1,4 @@
-export class ChatRoomForChatRooms {
+export class ChatRoomViewModel {
   public id: number;
   public creatorId: string;
   public creatorName: string;
