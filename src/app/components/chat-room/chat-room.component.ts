@@ -6,6 +6,7 @@ import { MessageService } from 'src/app/services/message.service';
 import * as signalR from '@aspnet/signalr';
 import { MyMessage } from 'src/app/Entities/Dto(Main)/MyMessage';
 import { MyMessageViewModel } from 'src/app/Entities/ViewModels/MyMessageViewModel';
+import { UsersService } from 'src/app/Services/users.service';
 
 @Component({
   selector: 'app-chat-room',
@@ -23,6 +24,7 @@ export class ChatRoomComponent implements OnInit {
   constructor(
     private chatRoomsService: ChatRoomsService,
     private messageService: MessageService,
+    private usersService: UsersService,
     private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -46,21 +48,20 @@ export class ChatRoomComponent implements OnInit {
       .catch(err => console.log('Error while starting connection: ' + err));
 
     this._hubConnection.on("Receive", (message: MyMessage) => {
-      let messageViewModel: MyMessageViewModel;
-      this.messages.push(messageViewModel);
+      this.messages.push(this.messageService.getMessageViewModel(message));
     });
   }
 
   public sendMessage()
   {
-    let message: MyMessage = {
-      id: null,
-      chatRoomId: this.chatRoom.id,
-      senderId: localStorage.getItem("userId"),
-      text: this.createText,
-      contentId: null
-    };
-    this.messages.push(message);
+    debugger;
+    let message: MyMessage;
+    message.id = 1;
+    message.chatRoomId = this.chatRoom.id;
+    message.senderId = localStorage.getItem("userId");
+    message.text = this.createText;
+    message.contentId = null;
+    this.messages.push(this.messageService.getMessageViewModel(message));
     this.messageService.sendMessage(message, this.chatRoom.id);
   }
 }

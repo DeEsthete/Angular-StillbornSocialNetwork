@@ -8,9 +8,6 @@
     </div>
     <div class="userContact"></div>
     <div class="readPosts container">
-        <app-post [post]="post"></app-post>
-        <app-post [post]="post"></app-post>
-        <app-post [post]="post"></app-post>
         <div *ngFor="let post of posts">
             <app-post [post]="post"></app-post>
         </div>

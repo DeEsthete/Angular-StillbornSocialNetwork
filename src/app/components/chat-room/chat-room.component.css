@@ -1,0 +1,28 @@
+.chatRoom{
+  min-height: 100%;
+   height: 100%;
+}
+.header{
+  border-bottom: 1px solid var(--border-color);
+}
+.inline{
+  display: inline-block;
+}
+.createText{
+  width: 80%;
+}
+.sendButton{
+  width: 17%;
+  text-align: center;
+}
+.message{
+  padding: 5px;
+  background: black;
+  border-radius: 10px;
+}
+.acceptedMessage{
+  background: var(--second-background-color);
+}
+.sendedMessage{
+  background: var(--purple);
+}

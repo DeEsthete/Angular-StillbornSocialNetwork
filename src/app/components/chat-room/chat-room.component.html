@@ -2,14 +2,16 @@
   <div class="header">
     <span *ngFor="let userName of usersNames">, {{ userName }}</span>
   </div>
-  <div class="messages">
-    <div class="message" *ngFor="let message of messages">
-      <span class="senderName">{{ message.sender.nickName }}: </span>
-      <span class="acceptText">{{ message.text }}</span>
-    </div>
-  </div>
   <div class="createMessage">
-    <input class="createText" type="text" [(ngModel)]="createText">
-    <span class="sendButton" (click)="sendMessage()">Отправить</span>
+    <input class="inline form-control createText" type="text" [(ngModel)]="createText">
+    <span class="button inline sendButton" (click)="sendMessage()">Отправить</span>
+  </div>
+  <div class="messages">
+    <ng-container *ngFor="let message of messages">
+      <div class="message acceptedMessage">
+        <span class="senderName">{{ message.sender.nickName }}: </span>
+        <span class="acceptText">{{ message.text }}</span>
+      </div><br>
+    </ng-container>
   </div>
 </div>
