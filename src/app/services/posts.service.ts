@@ -16,7 +16,7 @@ export class PostsService {
    }
 
   public getWallPosts(wallId: number): Observable<Post[]> {
-    return this.http.get<Post[]>('/api/post/getPosts/' + wallId);
+    return this.http.get<Post[]>('/api/post/getWallPosts/' + wallId);
   }
 
   public createPost(post: Post, wallId: number): void {

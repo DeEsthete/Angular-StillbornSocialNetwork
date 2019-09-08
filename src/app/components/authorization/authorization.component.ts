@@ -21,6 +21,7 @@ export class AuthorizationComponent implements OnInit {
   }
 
   public signIn() {
+    debugger;
     this.usersService.signIn(this.user).subscribe(result => this.goToProfile(result));
   }
 

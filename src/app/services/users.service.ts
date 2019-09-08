@@ -17,7 +17,8 @@ export class UsersService {
     return this.http.get<User>('/api/user/' + id);
   }
   public signIn(user: UserAuthorizeViewModel): Observable<string>{
-    return this.http.post<string>('/api/user/signIn', user);
+    debugger;
+    return this.http.post<string>('http://localhost:44368/api/user/login', user);
   }
   public signUp(user: User): void{
     this.http.post('/api/user/signUp', user);
